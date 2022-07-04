@@ -1,0 +1,39 @@
+//POSTS
+GET http://127.0.0.1:8000/api/posts HTTP/1.1
+
+###
+POST http://127.0.0.1:8000/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Title Baru 3",
+    "content": "New ini pakai Indo3"
+}
+
+###
+PUT http://127.0.0.1:8000/api/posts/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "New title (updated)",
+    "content": "New content (updated)"
+}
+
+###
+DELETE http://127.0.0.1:8000/api/posts/3 HTTP/1.1
+
+###
+//PASIEN
+GET http://127.0.0.1:8000/api/masterpasien HTTP/1.1
+
+###
+POST http://127.0.0.1:8000/api/masterpasien HTTP/1.1
+Content-Type: application/json
+
+{
+    "NOPASIEN": "201900194",
+    "NAMAPASIEN": "Anies Baswedan",
+    "TMPLAHIR": "Jakarta",
+    "TGLLAHIR": "1995/04/14",
+    "ALAMAT": "Jl. Peperangan Raya 12 Cililitan, Jakarta"
+}
